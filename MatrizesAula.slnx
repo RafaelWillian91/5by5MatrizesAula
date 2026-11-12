@@ -1,0 +1,5 @@
+<Solution>
+  <Project Path="Exercicio01Matriz/Exercicio01Matriz.csproj" />
+  <Project Path="Exercicio02Matriz3x5Invertida/Exercicio02Matriz3x5Invertida.csproj" />
+  <Project Path="MatrizesAula/MatrizesAula.csproj" />
+</Solution>
