@@ -2,8 +2,6 @@
 
 Console.WriteLine("*****************Matriz Original********************");
 
-
-
 int[,] matriz = new int[3,5];
 int[,] matrizInvertida = new int [5,3]; 
 void PopularMatriz()

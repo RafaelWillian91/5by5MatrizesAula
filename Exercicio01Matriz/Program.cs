@@ -14,7 +14,7 @@ void PopularMatriz()
 {
     for (int i = 0; i < qtdLinhas; i++)
     {
-        for (int j = 0; j < qtdLinhas; j++)
+        for (int j = 0; j < qtdColunas; j++)
         {
             m1[i, j] = RandomNumberGenerator.GetInt32(1, 6);
         }
@@ -23,9 +23,26 @@ void PopularMatriz()
 
 void ImprimirMatriz()
 {
+    Console.WriteLine("Matriz original:");
+
     for (int i = 0; i < qtdLinhas; i++)
     {
-        for (int j = 0; j < qtdLinhas; j++)
+        for (int j = 0; j < qtdColunas; j++)
+        {
+            Console.Write(m1[i, j] + " ");
+        }
+
+        Console.WriteLine();
+    }
+}
+
+void ImprimirMatrizInversa()
+{
+    Console.WriteLine("Matriz inversa:");
+
+    for (int i = qtdLinhas - 1; i >= 0; i--)
+    {
+        for (int j = qtdColunas - 1; j >= 0; j--)
         {
             Console.Write(m1[i, j] + " ");
         }
@@ -36,3 +53,4 @@ void ImprimirMatriz()
 
 PopularMatriz();
 ImprimirMatriz();
+ImprimirMatrizInversa();
